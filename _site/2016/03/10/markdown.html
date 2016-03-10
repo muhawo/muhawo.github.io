@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+　　<title>Markdown</title>
+</head>
+<body>
+　　<h2 id="markdown">Markdown</h2>
+<p>Markdown是一种简单易学的标记性语言，所谓标记性语言就是按照一定语法输入获得自己希望的格式输出。
+Markdown的语法简洁明了、学习容易，而且功能比纯文本更强，因此有很多人用它写博客。世界上最流行的博客平台WordPress和大型CMS如Joomla、Drupal都能很好的支持Markdown。完全采用Markdown编辑器的博客平台有Ghost和Typecho。</p>
+
+<h3 id="section">基本语法</h3>
+
+<ul>
+  <li>标题: 行首插入1-6个 # ，每增加一个 # 表示更深入层次的内容，对应到标题的深度由 1-6 阶。</li>
+  <li>无序列表: 使用星号、加号和减号来做为列表的项目标记，这些符号是都可以使用的</li>
+  <li>有序列表: 使用一般的数字接着一个英文句点作为项目标记</li>
+  <li>链接： <code class="highlighter-rouge">This is an [example link](http://example.com/).</code></li>
+  <li>图片： <code class="highlighter-rouge">![alt text](/path/to/img.jpg "Title")</code></li>
+  <li>代码： 在一般的段落文字中，你可以使用反引号 ` 来标记代码区段，区段内的 &amp;、&lt; 和 &gt; 都会被自动的转换成 HTML 实体</li>
+</ul>
+
+<h3 id="section-1">详细语法请参照：</h3>
+
+<ul>
+  <li>简明版 <a href="http://link.zhihu.com/?target=http%3A//wowubuntu.com/markdown/basic.html">Markdown 语法说明(简体中文版)</a></li>
+  <li>完整版 <a href="http://link.zhihu.com/?target=http%3A//wowubuntu.com/markdown/index.html">Markdown 语法说明(简体中文版)</a></li>
+</ul>
+
+<h3 id="section-2">难点&amp;重点</h3>
+
+<h4 id="section-3">空格和制表符的作用</h4>
+
+<p>4个空格和一个制表符作用一致，我们下面统称一个缩进。</p>
+
+<h5 id="section-4">你可以一个缩进来写出嵌套列表</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1. Make my changes
+    1. Fix bug
+    2. Improve formatting
+        * Make the headings bigger
+2. Push my commits to GitHub
+3. Open a pull request
+    * Describe my changes
+    * Mention all the members of my team
+        * Ask for feedback
+</code></pre>
+</div>
+
+<ol>
+  <li>Make my changes
+    <ol>
+      <li>Fix bug</li>
+      <li>Improve formatting
+        <ul>
+          <li>Make the headings bigger</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>Push my commits to GitHub</li>
+  <li>Open a pull request
+    <ul>
+      <li>Describe my changes</li>
+      <li>Mention all the members of my team
+        <ul>
+          <li>Ask for feedback</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h5 id="section-5">一个缩进可以建立代码区块</h5>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>这是一个普通段落：
+
+    这是一个代码区块。
+</code></pre>
+</div>
+
+<p>Markdown会转换成：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;p&gt;这是一个普通段落：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;这是一个代码区块。
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+</div>
+
+<p>在使用缩进时要注意一个缩进了两个缩进的所产生的不同作用，比如列表下一行的一个缩进表示二级列表，两个缩进则不会生成二级列表。
+如果你在列表下想插入代码区块，则需要两个缩进(同时前后各需一个空行)，因为一个缩进是生成二级列表。</p>
+
+<h3 id="section-6">其他</h3>
+
+<p>github给出了一些自定义的高级markdown语法，<a href="https://help.github.com/articles/github-flavored-markdown">GitHub Flavored Markdown</a></p>
+
+
+</body>
+</html>
