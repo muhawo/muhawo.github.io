@@ -2,6 +2,7 @@ $album_max_width: 1280px;
 $album_width: 1024px;
 $album_height: 596px;
 $borderColor: green;
+$bg-opacity-color: #999;
 .album{
     margin: 0 auto;
     width: $album_width;
@@ -25,7 +26,7 @@ $borderColor: green;
         float: left;
     }
     .note{
-        background-color: #999;
+        background-color: $bg-opacity-color;
         color: #fff;
         position: absolute;
         left: 0;

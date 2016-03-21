@@ -1,0 +1,15 @@
+---
+layout: index
+title: muhawoBlog-分类
+---
+    <div class="blogList">
+        <div class="listhover iconfont">&#xe602;</div>
+        <ul>
+        {% for blog in site.posts %}
+            <li>
+                <a href="{{blog.url}}">{{blog.title}}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+

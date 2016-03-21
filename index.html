@@ -18,14 +18,3 @@ title: 穆哈我-Blog
         <div class="pre iconfont">&#xe600;</div>
         <div class="next iconfont">&#xe601;</div>
     </div>
-    <div class="blogList">
-        <div class="listhover iconfont">&#xe602;</div>
-        <ul>
-        {% for blog in site.posts %}
-            <li>
-                <a href="{{blog.url}}">{{blog.title}}</a>
-            </li>
-        {% endfor %}
-            <li></li>
-        </ul>
-    </div>

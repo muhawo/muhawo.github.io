@@ -1,0 +1,16 @@
+---
+layout: index
+title: muhawoBlog-所有
+---
+    <div class="">
+        <ul>
+        {% for blog in site.posts %}
+            <li>
+                <a href="{{blog.url}}">{{blog.title}}</a>
+                <p>{{blog.excerpt}}</p>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+
+
