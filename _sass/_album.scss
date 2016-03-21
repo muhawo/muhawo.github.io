@@ -1,0 +1,58 @@
+$album_max_width: 1280px;
+$album_width: 1024px;
+$album_height: 596px;
+$borderColor: green;
+.album{
+    margin: 0 auto;
+    width: $album_width;
+    height: $album_height;
+    position: relative;
+    border: 1px solid $borderColor;
+    .viewport{
+        overflow: hidden;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        width: 99999px;
+    }
+    .picture{
+        vertical-align: middle;
+        list-style: none;
+        width: $album_width;
+        height: $album_height;
+        position: relative;
+        float: left;
+    }
+    .note{
+        background-color: #999;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-indent: 20px;
+    }
+    .pre,.next{
+        position: absolute;
+        height: 596px;
+        line-height: 596px;
+        text-align: center;
+        top: 0;
+        width: 40px;
+        background: #999;
+        opacity: 0;
+        font-size: 54px;
+        color: #fff;
+        cursor: pointer;
+    }
+    &:hover .pre, &:hover .next{
+        opacity: 0.6;
+    }
+    .pre{
+        left: 0;
+    }
+    .next{
+        right: 0;
+    }
+}

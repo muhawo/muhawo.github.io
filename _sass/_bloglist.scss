@@ -1,0 +1,37 @@
+.blogList{
+    position: absolute;
+    padding: 20px 20px 0 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #fff;
+    transition: width .5s;
+}
+@media screen and(min-width:1800px){
+    .blogList{
+        width: 300px;
+    }
+    .listhover{
+        display: none;
+    }
+}
+@media screen and(max-width:1800px){
+    .blogList{
+        width: 42px;
+        &:hover{
+            width: 300px;
+        }
+        .listhover{
+            display: block;
+        }
+        &:hover .listhover{
+            display: none;
+        }
+        ul{
+            display: none;
+        }
+        &:hover ul{
+            display: block;
+        }
+    }
+}

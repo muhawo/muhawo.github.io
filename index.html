@@ -1,11 +1,31 @@
 ---
-layout: default
-title: 我的Blog
+layout: index
+title: 穆哈我-Blog
 ---
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-　　　　{% for post in site.posts %}
-　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　　　{% endfor %}
-</ul>
+    <div class="album">
+        <div class="viewport">
+            <ul>
+            {% for cover in site.data.covers %}
+                <li class="picture">
+                    <img src="images/covers/{{cover.image}}">
+                    <div class="note">
+                        <p>{{cover.text}}</p>
+                    </div>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="pre iconfont">&#xe600;</div>
+        <div class="next iconfont">&#xe601;</div>
+    </div>
+    <div class="blogList">
+        <div class="listhover iconfont">&#xe602;</div>
+        <ul>
+        {% for blog in site.posts %}
+            <li>
+                <a href="{{blog.url}}">{{blog.title}}</a>
+            </li>
+        {% endfor %}
+            <li></li>
+        </ul>
+    </div>

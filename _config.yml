@@ -1,0 +1,6 @@
+url:                 http://localhost:4000
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+
