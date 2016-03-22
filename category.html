@@ -1,0 +1,14 @@
+---
+layout: index
+title: muhawoBlog-分类
+---
+    <div class="">
+        <ul>
+        {% for cat in site.categories %}
+        <div>{{cat | first}}</div>
+        {% endfor %}
+        </ul>
+    </div>
+
+
+
