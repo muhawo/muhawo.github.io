@@ -3,4 +3,5 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
+excerpt_separator: "\n\n"
 
