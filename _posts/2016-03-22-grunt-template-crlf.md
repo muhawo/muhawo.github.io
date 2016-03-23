@@ -45,7 +45,8 @@ title: 一个换行符（crlf、lf）引起的问题
 
 接下来开始google `grunt template crlf`，然后找到了上面的解决方法。
 
-在问题解决之前还发现一点奇怪的地方，就是为什么只有`lf.js`出现了这种问题，猜想肯定是template导致了这种问题的出现，而后续grunt任务又碰巧解决了这个问题。而`uglify`任务中确实存在这种将`crlf`转换为`lf`的代码。
+在问题解决之前还发现一点奇怪的地方，就是为什么只有`lf.js`出现了这种问题，猜想肯定是template导致了这种问题的出现，而后续grunt任务又碰巧解决了这个问题，碰巧`lf.js`又没有执行后面的任务。而`uglify`任务中确实存在这种将`crlf`转换为`lf`的代码，
+`lf.js`也正好没有执行`uglify`。
 
 [https://github.com/gruntjs/grunt-contrib-uglify/blob/master/tasks/uglify.js#L41](https://github.com/gruntjs/grunt-contrib-uglify/blob/master/tasks/uglify.js#L41)
 
