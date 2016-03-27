@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "js中undefined，null和typeof运算符, 解决Uncaught ReferenceError: xxx is not defined(转载)"
+keywords: "javascript, js , undefined, null, ReferenceError"
 ---
 
 如果你对undefined和null这两种类型经常分辨不清，那么恭喜，因为你会找到很多的知音。其实要理解这两种类型， 首先要知道它们设计的初衷：
