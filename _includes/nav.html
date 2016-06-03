@@ -1,6 +1,8 @@
-<div class="site-nav">
-     <a href="{{ site.baseurl }}/index.html">HOME</a>
-     <a href="{{ site.baseurl }}/newest.html">最新</a>
-     <a href="{{ site.baseurl }}/category.html">分类</a>
-     <a href="{{ site.baseurl }}/all.html">所有</a>
+<div class="site-nav" actived="{{page.nav}}">
+    <div class="container">
+     <a nav="home" href="{{ site.baseurl }}/index.html">HOME</a>
+     <a nav="newest" href="{{ site.baseurl }}/newest.html">最新</a>
+     <a nav="cat" href="{{ site.baseurl }}/category.html">分类</a>
+     <a nav="all" href="{{ site.baseurl }}/all.html">所有</a>
+    </div>
 </div>

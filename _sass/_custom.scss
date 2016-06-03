@@ -1,0 +1,36 @@
+body{
+    word-break: break-all;
+}
+.site-nav{
+    height: 42px;
+    background: $main-color;
+    color: white;
+    padding-top: 8px;
+    margin-bottom: 10px;
+    a{
+        color: white;
+        padding: 0 10px;
+    }
+}
+.m-blog{
+    margin-bottom: 0.8rem;
+    .title{
+        color: #000;
+        font-size: 1.2rem;
+        margin: 0.8rem 0;
+    }
+}
+.excerpt{
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.6;
+    margin:0;
+    padding:0;
+}
+.site-nav[actived="all"] [nav="all"],
+.site-nav[actived="home"] [nav="home"],
+.site-nav[actived="newest"] [nav="newest"],
+.site-nav[actived="cat"] [nav="cat"]{
+    font-weight: bold;
+    color: yellow;
+}

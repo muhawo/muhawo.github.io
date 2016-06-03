@@ -18,9 +18,8 @@ html {
   font-family: $root-font-family;
   font-size: $root-font-size;
   line-height: $root-line-height;
-
-  @media (min-width: $large-breakpoint) {
-    font-size: $large-font-size;
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    font-size: $root-font-size;
   }
 }
 
@@ -75,4 +74,8 @@ th {
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
+}
+ul{
+     margin: 0;
+     padding: 0;
 }

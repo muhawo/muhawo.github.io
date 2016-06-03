@@ -1,13 +1,14 @@
 ---
 layout: index
 title: muhawoBlog-所有
+nav: all
 ---
     <div class="">
         <ul>
         {% for blog in site.posts %}
-            <li>
-                <a href="{{blog.url}}">{{blog.title}}</a>
-                <p>{{blog.excerpt}}</p>
+            <li class="m-blog">
+                <a class="title" href="{{blog.url}}">{{blog.title}}</a>
+                <div class="excerpt">{{blog.excerpt | strip_html}}</div>
             </li>
         {% endfor %}
         </ul>
